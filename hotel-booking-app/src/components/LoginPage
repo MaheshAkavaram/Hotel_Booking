@@ -1,0 +1,53 @@
+import React, { useState } from 'react';
+import './LoginPage.css'; // Import your CSS file
+
+function LoginPage({ onLoginSuccess }) {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+
+    try {
+      // Replace this with your API endpoint for logging in
+      const response = await fetch('/api/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username, password }),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        onLoginSuccess(data.token); // Call the onLoginSuccess function with the token
+      } else {
+        setError('Invalid username or password');
+      }
+    } catch (error) {
+      console.error('Error logging in:', error);
+      setError('An error occurred');
+    }
+  };
+
+  return (
+    <div className="login-page">
+      <h2>Login</h2>
+      <form className="login-form" onSubmit={handleLogin}>
+        <label>
+          Username:
+          <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
+        </label>
+        <label>
+          Password:
+          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+        </label>
+        <button type="submit">Login</button>
+        {error && <p className="error-message">{error}</p>}
+      </form>
+    </div>
+  );
+}
+
+export default LoginPage;

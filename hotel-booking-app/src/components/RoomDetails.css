@@ -1,0 +1,60 @@
+/* RoomDetails.css */
+.room-details {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.room-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.room-name {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.room-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.room-price {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.currency {
+  font-size: 14px;
+  color: #666;
+}
+
+.reserve-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reserve-button:hover {
+  background-color: #0056b3;
+}
+
+.left-column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

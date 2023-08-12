@@ -1,0 +1,51 @@
+/* ReservationForm.css */
+.reservation-form-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.reservation-form-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.reservation-form-card h3 {
+  margin: 0 0 20px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.reservation-form-card form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.reservation-form-card input[type="date"],
+.reservation-form-card input[type="number"],
+.reservation-form-card button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.reservation-form-card button[type="submit"] {
+  margin-top: 15px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reservation-form-card button[type="submit"]:hover {
+  background-color: #0056b3;
+}

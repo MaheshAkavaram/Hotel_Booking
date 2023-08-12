@@ -1,0 +1,29 @@
+/* HomePage.css */
+.home-page {
+  position: relative;
+  padding: 20px;
+}
+
+.top-right-buttons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.register-button,
+.login-button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  background-color: #f4f4f4;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.register-button:hover,
+.login-button:hover {
+  background-color: #666;
+  color: #fff;
+}

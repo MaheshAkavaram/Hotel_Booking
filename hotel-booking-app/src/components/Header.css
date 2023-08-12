@@ -1,0 +1,38 @@
+/* Header.css */
+
+.header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 32px;
+  }
+  
+  .header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .button-container button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .button-container button:hover {
+    background-color: #fff;
+    color: #3498db;
+  }
+  
